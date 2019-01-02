@@ -7,10 +7,10 @@ import machine.components.*;
 
 public class CoffeeMachineImpl implements CoffeeMachine {
 
-    private EmptiedContainerImpl coffeeWaste;
-    private RefillableContainerImpl milkContainer;
-    private RefillableContainerImpl waterContainer;
-    private RefillableContainerImpl coffeeBeansContainer;
+    private EmptiedContainer coffeeWaste;
+    private RefillableContainer milkContainer;
+    private RefillableContainer waterContainer;
+    private RefillableContainer coffeeBeansContainer;
     private int coffeeBeansPortion;
     private double waterPortion;
     private double milkPortion;

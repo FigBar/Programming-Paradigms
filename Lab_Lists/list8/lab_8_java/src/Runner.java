@@ -4,8 +4,8 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Runner {
-    public static CoffeeMachineImpl machine1 = new CoffeeMachineImpl(5, 250.0, 40.0);
-    public static Scanner sc = new Scanner(System.in);
+    static CoffeeMachineImpl machine1 = new CoffeeMachineImpl(5, 250.0, 40.0);
+    static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
         boolean toFinish = true;

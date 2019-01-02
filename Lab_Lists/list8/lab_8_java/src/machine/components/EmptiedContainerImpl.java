@@ -26,10 +26,12 @@ public class EmptiedContainerImpl<T extends Number> implements EmptiedContainer<
         actualSubstanceAmount = zeroAmountValue;
     }
 
+    @Override
     public T getActualSubstanceAmount() {
         return actualSubstanceAmount;
     }
 
+    @Override
     public void setActualSubstanceAmount(T actualSubstanceAmount) {
         this.actualSubstanceAmount = actualSubstanceAmount;
     }

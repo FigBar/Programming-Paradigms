@@ -25,10 +25,12 @@ public class RefillableContainerImpl<T extends Number> implements RefillableCont
         this.actualSubstanceAmount = maxSubstanceAmount;
     }
 
+    @Override
     public T getActualSubstanceAmount() {
         return actualSubstanceAmount;
     }
 
+    @Override
     public void setActualSubstanceAmount(T actualSubstanceAmount) {
         this.actualSubstanceAmount = actualSubstanceAmount;
     }
