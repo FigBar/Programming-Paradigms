@@ -1,3 +1,4 @@
+import scala.collection.mutable.ListBuffer
 
 object QueueTest {
   def main(args: Array[String]): Unit = {
@@ -10,6 +11,12 @@ object QueueTest {
     val queue4 = queue3.dequeue
     println(queue4.isEmpty)
     println(queue2.TupleQueue.empty.isEmpty)
+
+    var list1: ListBuffer[Int] = ListBuffer(1,2,3)
+    var list2 = ListBuffer(4,5,6,7)
+    Copier.copy(list2, list1)
+
+    list2.foreach(elem => println(elem))
 
 
 
