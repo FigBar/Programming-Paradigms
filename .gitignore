@@ -10,9 +10,9 @@
 *_build
 *target
 *project
-*main
 *test
 *.sbt
 *.iml
 *.odt
 *.pdf
+.attach_pid*
