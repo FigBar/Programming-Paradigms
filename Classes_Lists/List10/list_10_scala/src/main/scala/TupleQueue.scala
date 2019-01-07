@@ -1,7 +1,7 @@
 class TupleQueueException(message: String) extends Exception(message)
 
 
-class TupleQueue[+T](private val queueTup: (List[T], List[T])) {
+class TupleQueue[+T]private(private val queueTup: (List[T], List[T])) {
 
   def enqueue[S >: T](element: S): TupleQueue[S] = {
     queueTup match {
@@ -26,10 +26,11 @@ class TupleQueue[+T](private val queueTup: (List[T], List[T])) {
   def isEmpty: Boolean =
     queueTup._1 == Nil
 
+}
   object TupleQueue {
-    def apply[S >: T](xs: S*): TupleQueue[S] = new TupleQueue[S](xs.toList, Nil)
+    def apply[T](xs: T*): TupleQueue[T] = new TupleQueue[T](xs.toList, Nil)
 
-    def empty[S >: T]: TupleQueue[S] = new TupleQueue[S](Nil, Nil)
+    def empty[T]: TupleQueue[T] = new TupleQueue[T](Nil, Nil)
   }
 
-}
+
