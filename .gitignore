@@ -11,6 +11,7 @@
 *target
 *project
 *test
+*out
 *.sbt
 *.iml
 *.odt
