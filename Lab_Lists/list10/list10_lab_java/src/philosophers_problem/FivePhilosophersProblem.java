@@ -8,15 +8,15 @@ public class FivePhilosophersProblem {
         final Philosopher[] philosophersArray = new Philosopher[5];
         final Semaphore deadlockPrecaution = new Semaphore(4, true);
 
-        for (int i = 0; i < 5 ; i++) {
+        for (int i = 0; i < 5; i++) {
             sticksArray[i] = new Stick(i);
         }
 
-        for (int i = 0; i < 5 ; i++) {
-            philosophersArray[i] = new Philosopher(sticksArray[i], sticksArray[(i+1)%5], deadlockPrecaution, i);
+        for (int i = 0; i < 5; i++) {
+            philosophersArray[i] = new Philosopher(sticksArray[i], sticksArray[(i + 1) % 5], deadlockPrecaution, i);
         }
 
-        for (Philosopher philosopher: philosophersArray) {
+        for (Philosopher philosopher : philosophersArray) {
             philosopher.start();
         }
     }

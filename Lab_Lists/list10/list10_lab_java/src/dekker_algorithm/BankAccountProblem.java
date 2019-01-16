@@ -1,8 +1,7 @@
 package dekker_algorithm;
 
 
-import dekker_algorithm.Donor;
-import dekker_algorithm.Recipient;
+
 
 public class BankAccountProblem {
     @SuppressWarnings("Duplicates")

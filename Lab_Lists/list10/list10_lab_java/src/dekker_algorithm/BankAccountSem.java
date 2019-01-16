@@ -18,11 +18,10 @@ class BankAccountSem {
     }
 
     synchronized void setAccountBalance(int accountBalance) {
-        if (accountBalance >= 0) {
-            this.accountBalance = accountBalance;
-            if (accountBalance == 0)
-                this.isAccountEmpty = true;
-        }
+        this.accountBalance = accountBalance;
+        if (accountBalance == 0)
+            this.isAccountEmpty = true;
+
     }
 
     boolean isAccountEmpty() {
