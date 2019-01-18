@@ -28,10 +28,8 @@ class Player(index: Int, name: String, players: => Array[ActorRef]) extends Acto
 }
 
 object Player {
-  def props(index: Int, name: String, players: => Array[ActorRef]) = Props(classOf[Player], index, name, players)
 
   case class Ball(count: Int)
 
   case object StartGame
-
 }
